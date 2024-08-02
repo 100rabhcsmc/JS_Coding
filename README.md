@@ -149,3 +149,30 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log(oddNumbers); // Output will be [1, 3, 5, 7]
 ```
+
+### 8. Check Palindrome
+
+Palindrome means _same when read forward or backward_
+
+```js
+function isPalindrome(str) {
+  const reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+console.log(isPalindrome("racecar")); // Output: true
+```
+
+for loop
+
+```js
+const Reverse = (str) => {
+  var reverseStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverseStr = reverseStr + str[i];
+  }
+  return str === reverseStr;
+};
+
+console.log(Reverse("racecar"));
+```
