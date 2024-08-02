@@ -110,6 +110,30 @@ for (let i = arr1.length - 1; i >= 0; i--) {
 console.log(reversedArr1); // Output will be [5, 4, 3, 2, 1]
 ```
 
+### 8. Reverse a String
+
+```js
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseString("hello")); // Output: "olleh"
+```
+
+**Using the for loop**
+
+```js
+const Reverse = (str) => {
+  var reverseStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverseStr = reverseStr + str[i];
+  }
+  return reverseStr;
+};
+
+console.log(Reverse("Hello")); // Output: "olleh"
+```
+
 ### 7.Odd Number
 
 ```js
