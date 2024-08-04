@@ -177,7 +177,7 @@ const Reverse = (str) => {
 console.log(Reverse("racecar"));
 ```
 
-### count of the char in string
+### 9. count of the char in string
 
 input = 'aaabbc';
 output = {a:3,b:2,c:1}
@@ -221,4 +221,28 @@ const charCount = (givenData) => {
 };
 
 console.log(charCount(givenData));
+```
+
+### 10.Find the Longest Substring Without Repeating Characters
+
+input = "aabbccd" output:4 unique char length
+
+```js
+const newData = (str) => {
+  let final = {};
+  for (let i = 0; i < str.length; i++) {
+    console.log(str[i]);
+    if (final[str[i]]) {
+      final[str[i]]++;
+    } else {
+      final[str[i]] = 1;
+    }
+  }
+  const countSubstring = Object.keys(final).join("").length;
+  return countSubstring;
+};
+
+console.log(newData("aabbcccc")); //3
+console.log(newData("sssmmmeccc")); //4
+console.log(newData("sachsau")); //5
 ```
