@@ -176,3 +176,49 @@ const Reverse = (str) => {
 
 console.log(Reverse("racecar"));
 ```
+
+### count of the char in string
+
+input = 'aaabbc';
+output = {a:3,b:2,c:1}
+
+```js
+const givenData = "aabbccc";
+
+const charCount = (givenData) => {
+  let newData = {};
+  for (let i = 0; i < givenData.length; i++) {
+    let char = givenData[i];
+    if (newData[char]) {
+      newData[char]++;
+    } else {
+      newData[char] = 1;
+    }
+  }
+  return newData;
+};
+
+console.log(charCount(givenData));
+```
+
+same proble minor change **input = ["aaabbbcccc"];**
+
+```js
+const givenData = ["aabbccc"];
+
+const charCount = (givenData) => {
+  let newData = {};
+  let str = givenData[0]; // Access the first element of the array
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (newData[char]) {
+      newData[char]++;
+    } else {
+      newData[char] = 1;
+    }
+  }
+  return newData;
+};
+
+console.log(charCount(givenData));
+```
